@@ -1,7 +1,7 @@
 ﻿using System.Collections.Immutable;
 using oezg.MathGame;
 
-loop(history: []);
+static void Loop(ImmutableList<GameStep> history) =>
+    Loop(MenuFirst.Read()(history));
 
-static void loop(ImmutableList<GameStep> history) =>
-    loop(MenuFirst.Read()(history));
+Loop([]);

@@ -42,10 +42,10 @@ namespace oezg.MathGame
             return history;
         }
 
-        public static ImmutableList<GameStep> History(ImmutableList<GameStep> history)
+        public static ImmutableList<GameStep> History(ImmutableList<GameStep> steps)
         {
-            Console.WriteLine(history.IsEmpty ? "Your history is empty" : string.Join(Environment.NewLine, history));
-            return history;
+            Console.WriteLine(steps.IsEmpty ? "Your history is empty" : string.Join(Environment.NewLine, steps));
+            return steps;
         }
 
         public static ImmutableList<GameStep> Score(ImmutableList<GameStep> history)
