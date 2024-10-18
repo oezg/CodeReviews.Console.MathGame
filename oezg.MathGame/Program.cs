@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Collections.Immutable;
+using oezg.MathGame;
+
+loop(history: []);
+
+static void loop(ImmutableList<GameStep> history) =>
+    loop(MenuFirst.Read()(history));
